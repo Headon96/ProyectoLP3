@@ -14,9 +14,14 @@ class CreatePublicacionsTable extends Migration
     public function up()
     {
         Schema::create('publicacions', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("id_pub");
+            $table->string("fecha",100);
+            $table->string("hora",100);
+            $table->string("titulo_p",50);
+            $table->string("descripcion_p",500);
+            
         });
+        
     }
 
     /**

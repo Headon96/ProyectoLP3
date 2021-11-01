@@ -35,4 +35,8 @@ class HomeController extends Controller
     {
         return view('mensajes');
     }
+    public function publicaciones()
+    {
+        return view('publicaciones');
+    }
 }
