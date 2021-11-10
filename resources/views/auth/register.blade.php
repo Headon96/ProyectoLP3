@@ -26,6 +26,22 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesion') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="{{ old('profesion') }}" required autocomplete="profesion" autofocus>
+
+                                @error('profesion')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                      
+                        
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">

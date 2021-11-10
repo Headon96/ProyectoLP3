@@ -21,6 +21,10 @@ class CreatePublicacionsTable extends Migration
             $table->string("descripcion_p",500);
             
         });
+        Schema::table('publicacions', function (Blueprint $table) {
+            $table->unsignedBigInteger("f_id_user");
+            $table->foreign("f_id_user")->references("id")->on("users");
+        });
         
     }
 

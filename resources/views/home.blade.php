@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
@@ -65,28 +66,28 @@
                 <div class="box-shadow-header">
                   <div class="unit flex-column flex-md-row">
                     <div class="unit-left">
-                      <div class="heading-5">Titulo</div>
+                      <div class="heading-5">Web de servicios</div>
                     </div>
                     <div class="unit-body">
-                      <p>Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+                      <p>Publica tus necesidades profesionales o coloca tu perfil profesional y consigue las mejores ofertas</p>
                     </div>
                   </div>
-                </div><img class="img-responsive" src="images/about-1-569x338.jpg" alt="" width="569" height="169"/>
+                </div><img class="img-responsive" src="images/about.jpg" alt="" width="569" height="169"/>
               </div>
             </div>
             <div class="col-md-6 col-xl-5">
               <ul class="list-lg">
                 <li>
-                  <div class="heading-5">texto 1</div>
-                  <p class="p-offset-1">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+                  <div class="heading-5">Publica tus solicitudes</div>
+                  <p class="p-offset-1">Muchos usuarios poseen gran interes en trabajar en tus proyectos.</p>
                 </li>
                 <li>
-                  <div class="heading-5">texto 2</div>
-                  <p class="p-offset-1">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+                  <div class="heading-5">Ofrece tus servicios profesionales</div>
+                  <p class="p-offset-1">Te damos la oportunidad de ofrecer tus capacidades al publico.</p>
                 </li>
                 <li>
-                  <div class="heading-5">texto 3</div>
-                  <p class="p-offset-1">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+                  <div class="heading-5">Mantente comunicado</div>
+                  <p class="p-offset-1">Puedes enviar mensajes a los usuarios con los que deseas trabajar o ya estas trabajando en cualquier momento.</p>
                 </li>
                 
               </ul>
@@ -99,12 +100,7 @@
         <div class="container text-center text-xl-left">
           <h2>Nuestros <span class="text-light">Clientes</span></h2>
           <div class="owl-carousel owl-carousel-4 text-center" data-items="1" data-sm-items="3" data-md-items="4" data-lg-items="5" data-xl-items="6" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false">
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-1-133x65.png" alt="" width="133" height="32"/></a></div>
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-2-117x61.png" alt="" width="117" height="30"/></a></div>
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-3-147x70.png" alt="" width="147" height="35"/></a></div>
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-4-139x64.png" alt="" width="139" height="32"/></a></div>
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-5-123x67.png" alt="" width="123" height="33"/></a></div>
-            <div class="item"><a class="link-image" href="#"><img src="images/brand-light-6-151x72.png" alt="" width="151" height="36"/></a></div>
+            
           </div>
         </div>
       </section>
@@ -116,7 +112,7 @@
             <div class="col-md-4">
               <div class="team-box-left">
                 <div class="team-meta unit align-items-center">
-                  <div class="unit-left"><img class="img" src="images/testimonials-1-138x138.jpg" alt="" width="138" height="69"/>
+                  <div class="unit-left"><img class="img" src="images/testimonials-1.jpg" alt="" width="138" height="69"/>
                   </div>
                   <div class="unit-body">
                     <h5 class="title">Kate White</h5>
@@ -129,7 +125,7 @@
             <div class="col-md-4">
               <div class="team-box-left">
                 <div class="team-meta unit align-items-center">
-                  <div class="unit-left"><img class="img" src="images/testimonials-2-138x138.jpg" alt="" width="138" height="69"/>
+                  <div class="unit-left"><img class="img" src="images/testimonials-2.jpg" alt="" width="138" height="69"/>
                   </div>
                   <div class="unit-body">
                     <h5 class="title">Victor Jackson</h5>
@@ -142,7 +138,7 @@
             <div class="col-md-4">
               <div class="team-box-left">
                 <div class="team-meta unit align-items-center">
-                  <div class="unit-left"><img class="img" src="images/testimonials-3-138x138.jpg" alt="" width="138" height="69"/>
+                  <div class="unit-left"><img class="img" src="images/testimonials-3.jpg" alt="" width="138" height="69"/>
                   </div>
                   <div class="unit-body">
                     <h5 class="title">Olivia Smith</h5>
@@ -199,7 +195,7 @@
         </div>
         <div class="footer-inner-2">
           <div class="container">
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Derechos reservados</p>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Derechos reservados copilot</p>
           </div>
         </div>
       </footer>

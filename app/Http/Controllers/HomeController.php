@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use App\Models\publicacion;
+
 
 class HomeController extends Controller
 {
@@ -35,8 +39,47 @@ class HomeController extends Controller
     {
         return view('mensajes');
     }
+
     public function publicaciones()
-    {
-        return view('publicaciones');
+    {     
+        $publicacion = publicacion::get();
+        $user = User::get();
+        return view("publicaciones", ["publicacion"=>$publicacion, "user"=>$user]);
     }
+    public function c_publicaciones(Request $data)
+    {
+        $data->validate(
+            [
+                
+            ]
+        );       
+
+        $publicacion = new publicacion();
+        $publicacion->fecha = $data["fecha"];
+        $publicacion->hora = $data["hora"];
+        $publicacion->titulo_p = $data["titulo_p"];
+        $publicacion->descripcion_p = $data["descripcion_p"];          
+        $publicacion->f_id_user = auth::user()->id; 
+        $publicacion->save();
+        return redirect()->route('publicaciones')->with('status', 'Publicacion creada!');
+    }
+
+
+    public function editar()
+    {
+       return view('editar');
+    }
+    
+    public function editarPerfil(Request $tabla)
+    {
+        
+        $perfil = User::find(Auth::id());
+        $perfil->name = $tabla['name'];
+        $perfil->profesion = $tabla['profesion'];
+        $perfil->save();      
+
+        return redirect()->route('perfil')->with('status', 'Actualizado!');
+    }
+    
+  
 }
